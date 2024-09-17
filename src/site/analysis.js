@@ -1748,7 +1748,7 @@ sauce.ns('analysis', ns => {
         const [start, end] = pageView.chartContext().convertStreamIndices(details.indices());
         const timeStream = await fetchStream('time', start, end);
         let timeMultiplier = 1;
-        const hasPatronRequirement = sauce.patronLevel >= 10;
+        const hasPatronRequirement = true;
         if (!hasPatronRequirement && sauce.isSafari()) {
             return;  // Apple Mac App Store requirement.
         }
